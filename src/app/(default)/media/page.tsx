@@ -10,7 +10,7 @@ export default function MediaPage() {
         <Section className="flex  flex-col items-center">
             <div className="w-full min-h-screen duration-150 md:w-[90%] lg:w-[80%] p-3 lg:p-0 xl:w-[70%] 2xl:w-[60%]  flex flex-col items-center">
                 <div className='h-screen flex justify-center items-center'>
-                    <AnimateText text='Media' once className='Patua-One text-6xl uppercase text-[#505050] lg:text-9xl' />
+                    <AnimateText text='Media' once className='Patua-One text-6xl uppercase translate-y-[-8rem] text-[#505050] lg:text-9xl' />
                 </div>
                 <ScrollImage />
                 <div className='h-screen flex flex-col items-start w-full gap-8 justify-start py-16'>

@@ -40,7 +40,7 @@ export default function ProjectsPage() {
     return (
         <Section className="flex  flex-col items-center">
             <div className="w-full min-h-screen duration-150 md:w-[90%] lg:w-[80%] p-3 lg:p-0 xl:w-[70%] 2xl:w-[60%]  flex justify-start   items-start">
-                <div className=' mt-[20vh] bg-white px-3 md:px-12 rounded-2xl shadow-secondary py-12 md:mt-[10vh] w-full flex flex-col gap-8'>
+                <div className='  bg-white px-3 md:px-12 rounded-2xl shadow-secondary py-12 w-full flex flex-col gap-8'>
                     <FilterProject projects={dataProject} />
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-[2vw] xl:gap-[1vw] lg:grid-cols-3'>
                         {
