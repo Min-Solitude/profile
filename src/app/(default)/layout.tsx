@@ -10,7 +10,7 @@ export default function DefaultLayout({
     return (
         <>
             <Header className='w-full sticky top-0 left-0' />
-            <main className="flex item-center flex-col min-h-screen mb-8">
+            <main className="flex item-center flex-col mb-8">
                 <PageWrapper>
                     {children}
                 </PageWrapper>

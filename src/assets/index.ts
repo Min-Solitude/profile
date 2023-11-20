@@ -12,6 +12,8 @@ import Nevsolit from "./imgs/nevsolit.jpg";
 import Nefy from "./imgs/nefy.jpg";
 import NeNFC from "./imgs/nevnfc.jpg";
 import Macbook from "./imgs/macbook.png";
+import Background from "./imgs/background.jpg";
+import About from "./imgs/about.jpg";
 
 export const IMAGES = {
   logo: Logo,
@@ -28,4 +30,6 @@ export const IMAGES = {
   nefy: Nefy,
   neNFC: NeNFC,
   macbook: Macbook,
+  background: Background,
+  about: About,
 };
