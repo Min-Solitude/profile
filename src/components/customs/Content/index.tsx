@@ -4,28 +4,28 @@ import { useAppSelector } from '@/hooks/redux'
 import React from 'react'
 
 type ContentProps = {
-    children: React.ReactNode
+    text: any
     className?: string
-    contentChange: React.ReactNode
+    vn_text: any
 }
 
-export default function Content({ children, className, contentChange }: ContentProps) {
+export default function Content({ text, className, vn_text }: ContentProps) {
 
     const language = useAppSelector(state => state.language.changeLanguage)
 
     return (
-        <div className={`${className}`}>
+        <>
             {
                 language === 'en' ? (
-                    <>
-                        {children}
-                    </>
+                    <p className={className}>
+                        {text}
+                    </p>
                 ) : (
-                    <>
-                        {contentChange}
-                    </>
+                    <p className={className}>
+                        {vn_text}
+                    </p>
                 )
             }
-        </div>
+        </>
     )
 }

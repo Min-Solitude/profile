@@ -21,12 +21,15 @@ export default function Item({ kind = 'project', description, vn_description, vn
                 <Image src={thumbnail} alt={name} width={1980} height={1440} className='w-full h-full object-cover' />
             </div>
             <div className='px-4 flex flex-col gap-2'>
-                <Content contentChange={<h1 className='font-semibold text-lg'>{vn_name}</h1>}>
-                    <h1 className='font-semibold text-lg'>{name}</h1>
-                </Content>
-                <Content contentChange={<h1 className='line-clamp-3 text-[#949494] text-sm'>{vn_description}</h1>}>
-                    <h1 className='line-clamp-3 text-[#949494] text-sm'>{description}</h1>
-                </Content>
+                <Content
+                    text={name}
+                    vn_text={vn_name}
+                    className='font-semibold text-lg' />
+
+                <Content
+                    text={description}
+                    vn_text={vn_description}
+                    className='text-sm text-[#949494] line-clamp-3' />
             </div>
         </div>
     )

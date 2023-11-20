@@ -10,6 +10,7 @@ import IonIcon from "@reacticons/ionicons";
 import Image from "next/image";
 import Link from "next/link";
 import DefaultLayout from "./(default)/layout";
+import Info from "@/components/customs/Info";
 
 export default function Home() {
 
@@ -22,9 +23,7 @@ export default function Home() {
               <div className="flex flex-col gap-3 md:flex-row">
                 <BoxDrag className="bg-white min-h-[18rem] w-full rounded-3xl gap-[2rem] shadow-primary p-[2rem] flex flex-col items-start">
                   <Avatar image={IMAGES.avatar} />
-                  <Content contentChange={<p className="text-base 2xl:text-lg text-[#313131]">Tôi là <span className="Patua-One text-black text-3xl">Min</span>, một nhà phát triển và người vẽ tranh đến từ Việt Nam. Tôi quan tâm đến React, Node, Thiết kế sản phẩm, Jamstack, Khởi nghiệp, Tiền điện tử và Âm nhạc.</p>} >
-                    <p className="text-base 2xl:text-lg text-[#313131]">I'm <span className="Patua-One text-black text-3xl">Min</span>, a developer and illustrator from Vietnam. I'm interested in React, Node, Product Design, Jamstack, Startups, Cryptocurrency and Music.</p>
-                  </Content>
+                  <Info />
                 </BoxDrag>
                 <BoxDrag className="instagram min-h-[18rem] w-full relative rounded-3xl overflow-hidden gap-[2rem] shadow-secondary flex justify-center items-center md:max-w-[18rem]">
                   <IonIcon name="logo-instagram" className="text-[#ffffff] text-6xl" />
@@ -47,9 +46,11 @@ export default function Home() {
                   <Link href={`/achievement`}>
                     <Button kind="secondary" className="absolute group overflow-hidden bottom-4 gap-2 px-4 duration-150 left-4">
                       <IonIcon name="arrow-up" className="text-xl rotate-45" />
-                      <Content contentChange={<p className="text-sm duration-150 font-medium">Thành tựu</p>} >
-                        <p className="text-sm duration-150 font-medium">Achievement</p>
-                      </Content>
+                      <Content
+                        text="Achievement"
+                        vn_text="Thành tựu"
+                        className="text-sm duration-150 font-medium" />
+
                     </Button>
                   </Link>
                 </BoxDrag>
@@ -71,9 +72,10 @@ export default function Home() {
                       <div className="vocal_music_02"></div>
                       <div className="vocal_music_03"></div>
                     </div>
-                    <Content contentChange={<p className="text-base font-medium text-[#62dbbe]">Ca khúc yêu thích</p>} >
-                      <p className="text-base font-medium text-[#62dbbe]">My favorite song</p>
-                    </Content>
+                    <Content
+                      text="My favorite song"
+                      vn_text="Ca khúc yêu thích"
+                      className="text-base font-medium text-[#62dbbe]" />
                   </div>
                   <div className="flex flex-col gap-1"><Link href={'https://open.spotify.com/track/4nkRb1iWHIjvpVcWtCPzuY'} className="text-3xl font-bold text-[#1a1a1a]">Van Gogh </Link><span className="text-sm text-[#3b3b3b]">(feat. Ashley Alisha)</span></div>
                 </div>
@@ -82,47 +84,43 @@ export default function Home() {
             <div className="flex flex-col gap-3 md:flex-row">
               <BoxDrag className=" bg-white w-full relative rounded-3xl overflow-hidden gap-[2rem] shadow-secondary p-8 flex justify-start flex-col items-start">
                 <div className="flex flex-col gap-1">
-                  <Content contentChange={<h1 className="font-bold text-2xl">Nó bắt đầu như thế nào và nó đang diễn ra như thế nào.</h1>} >
-                    <h1 className="font-bold text-2xl">How it started vs. how it's going.</h1>
-                  </Content>
-                  <Content contentChange={<p className="text-[#313131]">
-                    Một lịch sử cá nhân ngắn gọn liên quan đến thiết kế và phát triển cũng như cách tôi tìm thấy giá trị trong sự giao thoa giữa cả hai lĩnh vực.
-                  </p>}>
-                    <p className="text-[#313131]">
-                      A short personal history as it relates to design and development, and how I've found value in the cross-section between both disciplines.
-                    </p>
-                  </Content>
+                  <Content
+                    vn_text="Bắt đầu như thế nào và đang diễn ra như thế nào."
+                    text="How it started vs. how it's going."
+                    className="font-bold text-2xl" />
+                  <Content
+                    vn_text="Một lịch sử cá nhân ngắn gọn liên quan đến thiết kế và phát triển cũng như cách tôi tìm thấy giá trị trong sự giao thoa giữa cả hai lĩnh vực."
+                    text="A short personal history as it relates to design and development, and how I've found value in the cross-section between both disciplines."
+                    className="text-[#313131]" />
+
                 </div>
                 <div className="mt-8 flex w-full items-center justify-between">
                   <Button kind="secondary" className="group overflow-hidden bottom-4 gap-2 px-4 duration-150 left-4">
                     <IonIcon name="arrow-up" className="text-xl rotate-45" />
-                    <Content contentChange={<p className="text-sm duration-150 font-medium">Đọc thêm</p>} >
-                      <p className="text-sm duration-150 font-medium">Read more</p>
-                    </Content>
+                    <Content
+                      vn_text="Đọc thêm"
+                      text="Read more"
+                      className="text-sm duration-150 font-medium" />
                   </Button>
                   <span className="font-medium text-sm text-[#5a5a5a] ">May 5,2021</span>
                 </div>
               </BoxDrag>
               <BoxDrag className=" bg-white w-full relative rounded-3xl overflow-hidden gap-[2rem] shadow-secondary p-8 flex justify-start flex-col items-start md:justify-between">
                 <div className="flex flex-col gap-1">
-                  <Content contentChange={<h1 className="font-bold text-2xl">Bạn có gì muốn chia sẻ với tôi không?</h1>} >
-                    <h1 className="font-bold text-2xl">Do you have anything you want to share with me?</h1>
-                  </Content>
-                  <Content contentChange={<p className="text-[#313131]">
-                    Email: minull1810@gmail.com
-                  </p>}>
-                    <p className="text-[#313131]">
-                      Email: minull1810@gmail.com
-                    </p>
-                  </Content>
+                  <Content
+                    vn_text="Tôi đã tạo ra một số sản phẩm và dự án trong quá khứ."
+                    text="I've created some products and projects in the past."
+                    className="font-bold text-2xl" />
+                  <Content
+                    vn_text="Tôi đã tạo ra một số sản phẩm và dự án trong quá khứ."
+                    text="I've created some products and projects in the past."
+                    className="text-[#313131]" />
+
                 </div>
-                <Content contentChange={<i className="text-[#313131] text-sm">
-                  Liên hệ với tôi thông qua email*
-                </i>}>
-                  <i className="text-[#313131] text-sm">
-                    Contact me via email*
-                  </i>
-                </Content>
+                <Content
+                  vn_text=" Liên hệ với tôi thông qua email*"
+                  text=" Contact me via email*"
+                  className="text-sm duration-150 font-medium" />
               </BoxDrag>
             </div>
           </div>

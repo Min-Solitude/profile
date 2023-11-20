@@ -15,12 +15,10 @@ export default function MediaPage() {
                 <ScrollImage />
                 <div className='h-screen flex flex-col items-start w-full gap-8 justify-start py-16'>
                     <Content
-                        contentChange={
-                            <AnimateText text='Câu chuyện về tôi' once className='font-bold text-2xl text-center text-[#505050] lg:text-6xl' />
-                        }
-                    >
-                        <AnimateText text='Story about me' once className='Patua-One text-6xl uppercase text-[#505050] lg:text-6xl' />
-                    </Content>
+                        text={`Story about me`}
+                        vn_text={`Câu chuyện về tôi`}
+                        className='font-bold text-2xl text-center text-[#505050] lg:text-6xl' />
+
                     <Item
                         kind='blog'
                         thumbnail='https://i.pinimg.com/736x/23/b0/d1/23b0d1befaa8eea4eee0b2ee084cbd1e.jpg'
