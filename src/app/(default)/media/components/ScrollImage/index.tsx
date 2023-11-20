@@ -53,7 +53,7 @@ export default function ScrollImage() {
 
     return (
         <>
-            <div ref={gallery} className='overflow-hidden rounded-2xl w-full h-[160vh] bg-[#ffffff] shadow-secondary flex flex-row gap-[2vw]  lg:gap-[1vw] lg:p-[1vw] p-[2vw] box-border'>
+            <div ref={gallery} className='hidden overflow-hidden rounded-2xl w-full h-[160vh] bg-[#ffffff] shadow-secondary flex flex-row gap-[2vw]  lg:gap-[1vw] lg:p-[1vw] p-[2vw] box-border'>
                 <Column image={[Image[0], Image[1], Image[2], Image[3], Image[4]]} y={y} />
                 <Column image={[Image[6], Image[6], Image[5], Image[7], Image[8]]} y={y2} />
                 <Column image={[Image[9], Image[10], Image[11], Image[12], Image[13]]} y={y3} />

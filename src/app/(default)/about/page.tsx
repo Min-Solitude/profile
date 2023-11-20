@@ -21,24 +21,21 @@ export default function AboutPage() {
                             <Content className='font-bold text-white text-2xl' text='Vo Ngoc Min Kien' vn_text={'Võ Ngọc Min Kiên'} />
                             <Content className=' text-white text-base' text='Web developer' vn_text={'Nhà phát triển web'} />
                         </div>
-                        <div className='absolute top-4 right-4'>
-                            <Content className=' text-sm py-2 px-6 rounded-full bg-[#ffffffc9] shadow-primary font-semibold text-green-400' text='Status: alive' vn_text={'Tình trạng: còn sống'} />
-                        </div>
                         <div className='w-full flex mt-6 flex-col items-center gap-4'>
                             <Link href={'https://github.com/Min-Solitude'} className='w-full max-w-[20rem]'>
-                                <Button kind='primary' className='w-full text-[#2c2c2c] py-5 gap-2 bg-[#ffffffbd]'>
+                                <Button kind='primary' className='w-full text-[#ffffff] py-5 gap-2 '>
                                     <IonIcon name='logo-github' className='text-2xl' />
                                     <span className='font-medium'>Github</span>
                                 </Button>
                             </Link>
                             <Link href={'https://www.facebook.com/kien.mon.33/'} className='w-full max-w-[20rem]'>
-                                <Button kind='primary' className='w-full text-[#2c2c2c] py-5 gap-2 bg-[#ffffffbd]'>
+                                <Button kind='primary' className='w-full text-[#ffffff] py-5 gap-2 '>
                                     <IonIcon name='logo-facebook' className='text-2xl' />
                                     <span className='font-medium'>Facebook</span>
                                 </Button>
                             </Link>
                             <Link href={'https://www.instagram.com/ktys4tt/'} className='w-full max-w-[20rem]'>
-                                <Button kind='primary' className='w-full text-[#2c2c2c] py-5 gap-2 bg-[#ffffffbd]'>
+                                <Button kind='primary' className='w-full text-[#ffffff] py-5 gap-2 '>
                                     <IonIcon name='logo-instagram' className='text-2xl' />
                                     <span className='font-medium'>Instagram</span>
                                 </Button>

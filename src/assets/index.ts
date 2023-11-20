@@ -14,6 +14,7 @@ import NeNFC from "./imgs/nevnfc.jpg";
 import Macbook from "./imgs/macbook.png";
 import Background from "./imgs/background.jpg";
 import About from "./imgs/about.jpg";
+import Nevent from "./imgs/nevent.jpg";
 
 export const IMAGES = {
   logo: Logo,
@@ -32,4 +33,5 @@ export const IMAGES = {
   macbook: Macbook,
   background: Background,
   about: About,
+  nevent: Nevent,
 };
